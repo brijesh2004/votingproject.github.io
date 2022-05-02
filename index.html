@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voting.css">
+    <title>Document</title>
+    <script>
+var a=0,b=0,c=0,d=0,e=0,f=0;
+ function BJP(){
+  var x=confirm("you are voting for BJP");
+  if(x)
+  a++;
+ }
+ function SP(){
+    var x=confirm("you are voting for SP");
+  if(x)
+  b++;
+ }
+ function BSP(){
+    var x=confirm("you are voting for BSP");
+  if(x)
+  c++;
+ }
+ function AAP(){
+    var x=confirm("you are voting for AAP");
+  if(x)
+  d++;
+ }
+ function JANTA(){
+    var x=confirm("you are voting for JANTA");
+  if(x)
+  e++;
+ }
+ function OTHER(){
+    var x=confirm("you are voting for OTHER");
+  if(x)
+  f++;
+ }
+ function RESULT(){
+    document.write("BJP FINDS  "+a+"  VOTE<br>");
+    document.write("SP FINDS  "+b+"  VOTE<br>");
+    document.write("BSP FINDS  "+c+"  VOTE<br>");
+    document.write("AAP FINDS  "+d+"  VOTE<br>");
+    document.write("JANTA FINDS  "+e+"  VOTE<br>"); 
+     document.write("OTHER FINDS   "+f+"  VOTE<br>");
+  if(a>b&&a>c&&a>d&&a>e&&a>f)
+      document.write("<br><br><br><br><br>WINNER OF THIS ELECTION IS  BJP");
+ else if(b>c&&b>d&&b>e&&b>f)
+  document.write("<br><br><br><br><br>WINNER OF THIS ELECTION IS  SP");
+ else if(c>d&&c>e&&c>f)
+  document.write("<br><br><br><br><br>WINNER OF THIS ELECTION IS  BSP");
+ else if(d>e&&d>f)
+  document.write("<br><br><br><br><br>WINNER OF THIS ELECTION IS  AAP");
+ else if(e>f)
+  document.write("<br><br><br><br><br>WINNER OF THIS ELECTION IS  JANTA");
+  else
+  document.write("<br><br><br><br><br>WINNER OF THIS ELECTION IS  OTHER");
+ }
+
+    </script>
+</head>
+<body>
+    <div class="move">
+    <marquee behavior="scroll" direction="left">VOTE FOR BEST LEADER</marquee>
+</div>
+    
+    <div class="box">
+<button class="a" onclick="BJP()">BJP</button>
+<button class="a" onclick="SP()">SP</button>
+<button class="a" onclick="BSP()">BSP</button>
+<button class="a" onclick="AAP()">AAP</button>
+<button class="a" onclick="JANTA()">JANTA</button>
+<button class="a" onclick="OTHER()">OTHER</button>
+<button class="b" onclick="RESULT()">RESULT</button>
+    </div>
+</body>
+</html>
